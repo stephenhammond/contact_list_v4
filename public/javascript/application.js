@@ -17,7 +17,6 @@ $(function() {
     this.reset();
   });
   
-
   // DISPLAY ALL CONTACTS
   $('#button-all-contacts').on('click', function(){
     $.getJSON("http://localhost:3000/api/contact/list",     

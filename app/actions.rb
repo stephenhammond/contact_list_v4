@@ -23,8 +23,3 @@ post '/' do
     phone: params[:phone])
 end
 
-
-get '/search' do
-  
-
-end

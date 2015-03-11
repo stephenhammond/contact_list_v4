@@ -1,7 +1,14 @@
 #banner {
-  background-color: #1111FF;
+  background-color: #bdccd3;
   color: white;
   width: 100%;
   padding: 20px;
+  padding-left: 150px;
   margin-bottom: 15px;
+  border-bottom: solid 3px;
+  border-color: #CCC;
+}
+
+body {
+  background-color: #FEFEFE;
 }
