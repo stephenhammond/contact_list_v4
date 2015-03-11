@@ -15,22 +15,16 @@ get '/api/contact/:id' do
   json @contact
 end
 
-
-post '/contact/new' do
-  @contact = Contact.new(
+post '/' do
+  Contact.create(
     first_name: params[:first_name],
     last_name: params[:last_name],
     email: params[:email],
     phone: params[:phone])
-  if @contact.save
-    redirect '/api/contact/list'
-  else
-    erb :index
-  end
 end
 
 
+get '/search' do
+  
 
-post '/search' do
-  redirect '/'
 end

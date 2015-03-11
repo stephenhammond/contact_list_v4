@@ -1,9 +1,10 @@
 <div class="container">
   <div class="row">
-    <div class="col-md-4">
-      <div id="button-all-contacts"><button>List All Contacts</button></div>
+    <div class="col-md-3">
+      <div id="button-all-contacts"><button class="btn btn-primary">List All Contacts</button></div><br/>
       <div id="showdata"></div>
     </div>
+    <div class="col-md-1"></div>
     <div class="col-md-4">
       <form id="new-contact" method="POST" action="/">
         <div class="form-group">
@@ -25,7 +26,17 @@
         <button type="submit" class="btn btn-default">Submit</button>
       </form>
     </div>
-    <div class="col-md-4"></div>
+    <div class="col-md-2"></div>
+    <div class="col-md-2"><br/>
+      <form id="search-form" class="form-inline">
+        <div class="form-group">
+          <label class="sr-only">ID</label>
+          <input type="text" name="id-search" class="form-control" placeholder="Enter ID to search">
+        </div>
+        <button type="submit" class="btn btn-default">Search</button>
+        <div id="search-result"></div>
+      </form>
+    </div>
   </div>
 </div>
 
