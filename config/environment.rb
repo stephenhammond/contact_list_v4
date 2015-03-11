@@ -1,5 +1,7 @@
 require 'rubygems'
 require 'bundler/setup'
+require 'json'
+require 'active_record'
 
 require 'active_support/all'
 
