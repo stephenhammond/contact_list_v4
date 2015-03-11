@@ -52,9 +52,9 @@ $(function() {
       success: function (contactData) {
         // debugger;
         $("#search-result").html(
-          "<p class='list-group-item'>Name: " + contactData.first_name + " " + contactData.last_name + "</p>" +
-          "<p class='list-group-item'>Email: " + contactData.email + "</p>" +
-          "<p class='list-group-item'>Phone: " + contactData.phone + "</p>"
+          "<div class='list-group-item'>" +
+            "<p>Name: " + contactData.first_name + " " + contactData.last_name + "</p>" + "<p>Email: " + contactData.email + "</p>" +
+            "<p>Phone: " + contactData.phone + "</p>" + "</div>"
           );
       },
       error: function() {
