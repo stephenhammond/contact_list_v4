@@ -23,8 +23,6 @@ $(function() {
       function(data) {
         var items = [];
         $.each( data, function( key, val ) {
-          // console.log(data[index].first_name)
-          // $('#showdata').text("Name: " + data[key].first_name + " " +  data[key].last_name);
           items.push( 
             "<li class='list-group-item'>" + "Name: "+ data[key].first_name + " " +  data[key].last_name + "<br/>" +
             "Email: "+ data[key].email + "<br/>" +
